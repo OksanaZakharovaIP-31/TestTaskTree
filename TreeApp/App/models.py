@@ -7,6 +7,7 @@ class MenuCategory(models.Model):
     name = models.CharField(max_length=300,
                             blank=True,
                             null=False)
+    slug = models.SlugField(max_length=100)
 
     def __str__(self):
         return self.name
@@ -23,9 +24,7 @@ class Menu(models.Model):
                                blank=True,
                                null=True,
                                default=None)
-    path = models.CharField(max_length=1000,
-                            blank=True,
-                            null=False)
+    slug = models.SlugField(max_length=100,)
 
     def __str__(self):
         return self.name
