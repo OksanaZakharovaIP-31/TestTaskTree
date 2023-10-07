@@ -25,7 +25,7 @@
 
 1. Клонирование репозитория
 
-``
+`https://github.com/OksanaZakharovaIP-31/TestTaskTree.git`
 
 2. Установка виртуального окружения и его активация
 
