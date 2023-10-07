@@ -80,10 +80,10 @@ WSGI_APPLICATION = 'TreeApp.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'App',
+        'NAME': os.getenv('NAME_DB'),
         'USER': os.getenv('USER_DB'),
         'PASSWORD': os.getenv('PASSWORD_DB'),
-        'HOST': 'localhost',
+        'HOST': os.getenv('HOST_DB'),
         'PORT': 5432,
     }
 }
